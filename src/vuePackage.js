@@ -1,6 +1,6 @@
 // import 'element-ui/lib/theme-chalk/index.css';
-// import Vue from 'vue';
-// import ELEMENT from 'element-ui';
+import Vue from 'vue';
+import ELEMENT from 'element-ui';
 import * as filters from './filters';
 import methods from './utils/method';
 import './assets/css/index.less';

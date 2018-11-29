@@ -21,12 +21,13 @@ const resolve = (dir) => {
 }
 
 const webpackConfig = merge(baseWebpackConfig, {  
-  // externals: {
-  //   'vue': 'Vue',
-  //   'vue-router': 'VueRouter',
-  //   'vuex': 'Vuex',
-  //   'axios': 'axios'
-  // },
+  externals: { 
+    'vue': 'Vue',
+    "element-ui": "ELEMENT",
+    'vue-router': 'VueRouter',
+    'vuex': 'Vuex',
+    'axios': 'axios'
+  },
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,

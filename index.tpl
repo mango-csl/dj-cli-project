@@ -17,12 +17,8 @@
   <script src="//cdn.jsdelivr.net/npm/vue-router@2.7.0/dist/vue-router.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vuex@3.0.1/dist/vuex.js"></script>
-  <% } %>
-  <script src="//cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.runtime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/vue-router@2.7.0/dist/vue-router.min.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://unpkg.com/vuex@3.0.1/dist/vuex.js"></script>
   <script src="https://cdn.bootcss.com/element-ui/2.4.1/index.js"></script>
+  <% } %>
 </body>
 </html>
 

@@ -1,6 +1,6 @@
 // import './compatible';//浏览器版本过低处理
 import Vue from './vuePackage';
-// import VueRouter from 'vue-router';
+import VueRouter from 'vue-router';
 import store from './store/index';
 import App from './App';
 import routes from './router';
