@@ -16,7 +16,8 @@ export default {
       menu: [
         { name: '首页', value: 'index' },
         { name: '管理', value: 'manage' },
-        { name: '详情', value: 'detail' }
+        { name: '详情', value: 'detail' },
+        { name: '测试', value: 'componentTag' }
       ]
     };
   }

@@ -20,7 +20,7 @@ const resolve = (dir) => {
   return path.join(__dirname, '..', dir)
 }
 
-const webpackConfig = merge(baseWebpackConfig, {  
+const webpackConfig = merge(baseWebpackConfig, {
   // externals: {
   //   'vue': 'Vue',
   //   'vue-router': 'VueRouter',
