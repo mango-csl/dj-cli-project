@@ -6,6 +6,9 @@
   export default {
     name: "button",
     props: ['row'],
+    created() {
+      console.log('button created');
+    },
     methods: {
       todo() {
         console.log('component todo');

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+
+</head>
+<body>
+<div id="app">
+</div>
+<script>
+  let orderTitleList_new = [
+    {label: '提货单号', prop: 'deliveryId', width: 200},
+    {label: '订单编号', prop: 'orderId', width: 230},
+    {label: '生产编号', prop: 'productionNo', width: 230},
+    {
+      label: '订单状态', prop: 'orderStatus'
+    },
+    {label: '仓库', prop: 'warehouseName', width: 110},
+    {label: '库区', prop: 'warehouseAreaName'},
+    {label: '库位', prop: 'warehouseLocName'},
+    {label: '装车顺序', prop: 'sequence'},
+    {label: '客户名称', prop: 'customerName'},
+    {
+      label: '交期', prop: 'deliveryTime', width: 140
+    },
+    {label: '产品名称', prop: 'productName'},
+    {label: '楞型', prop: 'fluteType'},
+    {label: '材料名称', prop: 'materialName'},
+    {label: '下料规格', prop: 'materialSize', width: 120},
+    {label: '产品规格', prop: 'productSize', width: 140},
+    {label: '提货数量', prop: 'deliveryAmount'},
+    {label: '单位', prop: 'unit'}
+  ];
+  // 启动计时器
+  console.time('testForEach');
+
+  for (let i = 0; i < 10000; i++) {
+    JSON.parse(JSON.stringify(orderTitleList_new))
+  }
+
+  // 停止计时，输出时间
+  console.timeEnd('testForEach');
+
+  // 启动计时器
+  console.time('testForEach2');
+
+  for (let i = 0; i < 10000; i++) {
+    let _value = orderTitleList_new;
+  }
+
+  // 停止计时，输出时间
+  console.timeEnd('testForEach2');
+
+
+</script>
+</body>
+</html>

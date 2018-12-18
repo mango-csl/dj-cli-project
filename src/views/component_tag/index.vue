@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <table-template>
-      <template slot-scope="props">
-        <component :is="button.component"
-                   v-on="button.listeners"
-                   v-bind="{row:props.data}">
-        </component>
-        <!-- {{props.data}} ---  -->
+      <template slot-scope="{data}">
+        <!--<component :is="button.component"-->
+        <!--v-on="button.listeners"-->
+        <!--v-bind="{row:props.data}">-->
+        <!--</component>-->
+        {{data}} ---
       </template>
       <!-- <p>A paragraph for the main content.</p>
       <p>And another one.</p>
@@ -17,7 +17,7 @@
     </table-template>
     --------------------button-------------------
 
-    <component :is="button_const.component">
+    <component :is="button_const.component" v-on="button_const.listeners">
     </component>
     --------------------render-------------------
     <component :is="renderDemo.component">
@@ -34,22 +34,18 @@
   import button from './child/button';
 
   const ORDERBTN = {
+    name: "ORDERBTN",
     props: ['row'],
-    // render() {
-    //   return <span>拆分订单</span>;
-    // },
     template: `<span>拆分订单</span>`,
     created() {
       console.log('ORDERBTN created');
+    },
+    methods: {
+      todo() {
+        console.log('component todo');
+        this.$emit('todo');
+      }
     }
-    // template: `<a href="javascript:;" @click.stop="todo">拆分订单</a>`,
-    // props: ['row'],
-    // methods: {
-    //   todo() {
-    //     console.log('component todo');
-    //     this.$emit('todo');
-    //   }
-    // }
   };
   const render = Vue.extend({
     props: ['row'],
